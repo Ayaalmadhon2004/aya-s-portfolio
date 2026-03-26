@@ -4,37 +4,36 @@
   --color-background: #030712;
   --color-foreground: #f8fafc;
   --color-emerald-500: #10b981;
-  --color-border: rgba(255, 255, 255, 0.05);
 }
 
 :root {
   --background: #030712;
   --foreground: #f8fafc;
+  /* تفعيل التنقل الناعم */
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--background);
   color: var(--foreground);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s ease;
+/* Custom Emerald Scrollbar - فخم جداً ونحيف */
+::-webkit-scrollbar {
+  width: 5px;
 }
 
-/* تحسين شكل السكرول بار ليناسب التصميم */
-::-webkit-scrollbar {
-  width: 6px;
-}
 ::-webkit-scrollbar-track {
-  background: var(--background);
+  background: #030712;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #10b981;
-  border-radius: 10px;
+  border-radius: 20px;
+}
+
+/* لتجنب أي تداخل في العناصر عند السكرول */
+* {
+  box-sizing: border-box;
 }
