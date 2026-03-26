@@ -13,7 +13,7 @@ export default function HeroSection() {
           </p>
         </div>
         
-        <h1 className="text-6xl md:text-[100px] lg:text-[120px] font-black text-foreground mb-10 tracking-tighter leading-[0.9]">
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-black text-foreground mb-8 tracking-tighter leading-[1.1]">
           Aya Almadhon<span className="text-emerald-500">.</span>
         </h1>
         
@@ -30,14 +30,19 @@ export default function HeroSection() {
             <a href="mailto:ayaalmadhon0@gmail.com" className="text-muted-foreground hover:text-emerald-500 transition-colors"><Mail size={22} /></a>
           </div>
 
-          <Button variant="outline" size="lg" className="group border-white/10 hover:border-emerald-500/50 text-foreground rounded-xl font-bold bg-white/5 backdrop-blur-sm">
-            Explore Projects
-            <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform text-emerald-500" />
-          </Button>
+          <a href="#projects" className="cursor-pointer">
+            <Button 
+              variant="outline" 
+              size="lg" 
+              className="group border-white/10 hover:border-emerald-500/50 text-foreground rounded-xl font-bold bg-white/5 backdrop-blur-sm"
+            >
+              Explore Projects
+              <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform text-emerald-500" />
+            </Button>
+          </a>
         </div>
       </div>
       
-      {/* الخط الجمالي الجانبي */}
       <div className="absolute left-6 md:left-16 lg:left-32 top-[70%] -translate-y-1/2 w-[1px] h-32 bg-gradient-to-b from-transparent via-emerald-500/20 to-transparent hidden md:block" />
     </section>
   )

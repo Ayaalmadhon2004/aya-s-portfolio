@@ -13,12 +13,12 @@ const projects = [
   },
   {
     id: "02",
-    title: "VibeSync",
+    title: "Social Media",
     subtitle: "Social Media Interaction Prototype",
     description: "A high-fidelity React-based networking platform featuring modular component architecture. Implemented complex UI logic for messaging, user connections, and real-time activity simulations with a focus on seamless state transitions.",
     tech: ["React.js", "JavaScript", "CSS3", "Modular Architecture"],
     link: "https://social-media-psi-red.vercel.app/",
-    github: "https://github.com/Ayaalmadhon2004",
+    github: "https://github.com/Ayaalmadhon2004/Social-media",
   },
   {
     id: "03",
@@ -27,19 +27,18 @@ const projects = [
     description: "A high-performance React-driven retail interface. Implemented a robust dynamic filtering system and organized product architecture to optimize user discovery and navigation flows.",
     tech: ["React.js", "JavaScript", "Tailwind CSS", "Dynamic Routing"],
     link: "https://ecommerce-one-teal-22.vercel.app/",
-    github: "https://github.com/Ayaalmadhon2004",
+    github: "https://github.com/Ayaalmadhon2004/Ecommerce-",
   }
-]
+];
 
 export default function Projects() {
   return (
     <section className="py-32 px-8 md:px-20 lg:px-40 bg-background border-t border-white/5" id="projects">
       <div className="max-w-7xl mx-auto"> 
         
-        {/* Header Section */}
         <div className="flex items-center gap-6 mb-24">
-          <h2 className="text-5xl md:text-7xl font-black text-white tracking-tighter uppercase italic">
-            Selected Work
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-black text-white tracking-tighter uppercase italic">
+            Selected Work<span className="text-emerald-500">.</span>
           </h2>
           <div className="h-[1px] flex-1 bg-emerald-500/20" />
         </div>
@@ -95,7 +94,6 @@ export default function Projects() {
                 </div>
               </div>
 
-              {/* Right Decorative Line (Matches high-end styles) */}
               <div className="hidden lg:flex lg:col-span-4 h-full items-center justify-end">
                 <div className="w-[1px] h-64 bg-gradient-to-b from-transparent via-white/10 to-transparent relative">
                   <div className="absolute top-1/2 -left-[1px] w-[3px] h-16 bg-emerald-500 group-hover:h-40 transition-all duration-700" />

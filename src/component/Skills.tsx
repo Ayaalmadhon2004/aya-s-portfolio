@@ -8,7 +8,9 @@ export default function SkillsSection() {
   return (
     <section className="py-24 md:py-32 px-6 md:px-16 lg:px-32 bg-background border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-black text-foreground mb-4 tracking-tighter italic uppercase">Technical Expertise</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-foreground mb-6 tracking-tighter italic uppercase opacity-90">
+          Technical Expertise<span className="text-emerald-500">.</span>
+        </h2> 
         <p className="text-muted-foreground mb-20 max-w-2xl text-lg font-light leading-relaxed">
           Specialized in building scalable systems with a focus on performance and clean architecture.
         </p>
