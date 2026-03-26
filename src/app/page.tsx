@@ -4,14 +4,14 @@ import Skills from '@/component/Skills';
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 max-w-6xl">
+    <main className="bg-[#030712] min-h-screen w-full overflow-x-hidden">
       <Hero />
       <Skills />
       <Projects />
       
-      <footer className="py-20 text-center border-t border-slate-100">
-        <p className="text-slate-400 text-sm font-mono">
-          © {new Date().getFullYear()} Aya Almadhon. Built with Next.js & Engineering Precision.
+      <footer className="py-20 text-center border-t border-white/5">
+        <p className="text-slate-500 text-xs font-mono tracking-widest uppercase">
+          © {new Date().getFullYear()} Aya Almadhon — Engineered for Impact
         </p>
       </footer>
     </main>

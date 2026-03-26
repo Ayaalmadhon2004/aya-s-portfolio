@@ -1,47 +1,44 @@
-"use client";
+"use client"
+import { ArrowDown, Mail, Globe, Cpu } from "lucide-react"
+import { Button } from "@/component/ui/button"
 
-import { Mail, ExternalLink } from 'lucide-react';
-
-export default function Hero() {
+export default function HeroSection() {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-20 px-4">
-      <div className="max-w-3xl">
-        <div className="inline-block px-3 py-1 mb-6 text-sm font-mono text-blue-600 bg-blue-50 border border-blue-100 rounded-full">
-          Computer Systems Engineering 
+    <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-16 lg:px-32 py-24 bg-background overflow-hidden">
+      <div className="relative z-10 max-w-6xl">
+        <div className="flex items-center gap-4 mb-8">
+          <div className="h-[1px] w-12 bg-emerald-500/40" />
+          <p className="text-emerald-500 font-mono text-[10px] md:text-xs tracking-[0.4em] uppercase">
+            Computer Systems Engineering
+          </p>
         </div>
-
-        <h1 className="text-5xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">
-          Aya Almadhon
+        
+        <h1 className="text-6xl md:text-[100px] lg:text-[120px] font-black text-foreground mb-10 tracking-tighter leading-[0.9]">
+          Aya Almadhon<span className="text-emerald-500">.</span>
         </h1>
-
-        <p className="text-xl text-slate-600 leading-relaxed mb-8">
-          Frontend Specialist with 2 years of experience building high-performance 
-          <span className="text-blue-600 font-semibold"> React & Next.js </span> 
-          applications. Currently engineering Full-Stack solutions to solve complex 
-          real-world challenges.
+        
+        <p className="text-lg md:text-2xl text-muted-foreground max-w-2xl leading-relaxed mb-12 font-light">
+          Frontend Specialist with 2 years of experience crafting high-performance 
+          <span className="text-emerald-500 font-medium italic text-shadow-sm"> React </span> & 
+          <span className="text-emerald-500 font-medium italic"> Next.js </span> ecosystems.
         </p>
-
-        <div className="flex flex-wrap gap-4 items-center">
-          <div className="flex gap-3 pr-6 border-r border-slate-200">
-            <a href="https://github.com/Ayaalmadhon2004" target="_blank" className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
-              <Mail size={24} />
-            </a>
-            <a href="https://linkedin.com/in/aya-almadhon2025" target="_blank" className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
-              <Mail size={24} />
-            </a>
-            <a href="mailto:ayaalmadhon0@gmail.com" className="p-2 text-slate-500 hover:text-blue-600 transition-colors">
-              <Mail size={24} />
-            </a>
+        
+        <div className="flex flex-wrap items-center gap-8">
+          <div className="flex gap-6 pr-8 border-r border-white/10">
+            <a href="https://github.com/Ayaalmadhon2004" className="text-muted-foreground hover:text-emerald-500 transition-colors"><Globe size={22} /></a>
+            <a href="https://linkedin.com/in/aya-almadhon2025" className="text-muted-foreground hover:text-emerald-500 transition-colors"><Cpu size={22} /></a>
+            <a href="mailto:ayaalmadhon0@gmail.com" className="text-muted-foreground hover:text-emerald-500 transition-colors"><Mail size={22} /></a>
           </div>
 
-          <button 
-            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-            className="flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
-          >
-            View My Projects <ExternalLink size={18} />
-          </button>
+          <Button variant="outline" size="lg" className="group border-white/10 hover:border-emerald-500/50 text-foreground rounded-xl font-bold bg-white/5 backdrop-blur-sm">
+            Explore Projects
+            <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform text-emerald-500" />
+          </Button>
         </div>
       </div>
+      
+      {/* الخط الجمالي الجانبي */}
+      <div className="absolute left-6 md:left-16 lg:left-32 top-[70%] -translate-y-1/2 w-[1px] h-32 bg-gradient-to-b from-transparent via-emerald-500/20 to-transparent hidden md:block" />
     </section>
-  );
+  )
 }
